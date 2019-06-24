@@ -1,0 +1,36 @@
+{
+    "name": "johnkrovitch/string-utils",
+    "description": "PHP class to help string manipulation",
+    "type": "library",
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "johnkrovitch",
+            "email": "arnaudfrezet@gmail.com"
+        },
+        {
+            "name": "JohanDufour",
+            "email": "johan.dufour@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "LAG\\Component\\StringUtils\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LAG\\Component\\StringUtils\\": "tests/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
