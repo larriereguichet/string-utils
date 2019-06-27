@@ -38,6 +38,8 @@ class StringUtilsTest extends TestCase
     {
         $this->assertEquals('MyLittlePanda', StringUtils::camelize('my little panda'));
         $this->assertEquals('MyLittlePanda', StringUtils::camelize('My Little Panda'));
+
+        $this->assertEquals('toratoratora', StringUtils::camelize('tora tora tora', true));
     }
 
     public function testUnderscore(): void

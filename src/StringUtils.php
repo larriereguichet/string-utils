@@ -8,12 +8,19 @@ class StringUtils
      * Camelize a string.
      *
      * @param string $id A string to camelize
+     * @param bool   $lowerCase
      *
      * @return string The camelized string
      */
-    public static function camelize($id): string
+    public static function camelize(string $id, bool $lowerCase = false): string
     {
-        return strtr(ucwords(strtr($id, ['_' => ' ', '.' => '_ ', '\\' => '_ '])), [' ' => '']);
+        $value = strtr(ucwords(strtr($id, ['_' => ' ', '.' => '_ ', '\\' => '_ '])), [' ' => '']);
+
+        if ($lowerCase) {
+            $value = strtolower($value);
+        }
+
+        return $value;
     }
 
     /**
@@ -23,7 +30,7 @@ class StringUtils
      *
      * @return string The underscored string
      */
-    public static function underscore($id): string
+    public static function underscore(string $id): string
     {
         return strtolower(preg_replace([
                 '/([A-Z]+)([A-Z][a-z])/',
