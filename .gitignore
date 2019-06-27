@@ -1,3 +1,4 @@
 /bin
 /var/
 /vendor/
+.php_cs.cache
