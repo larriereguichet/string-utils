@@ -1,5 +1,5 @@
 {
-    "name": "johnkrovitch/string-utils",
+    "name": "lag/string-utils",
     "description": "PHP class to help string manipulation",
     "type": "library",
     "require": {
