@@ -86,12 +86,12 @@ class StringUtils
      * Return true if the given string starts with $start.
      *
      * @param string $string
-     * @param string $start
+     * @param string $end
      *
      * @return bool
      */
-    public static function endsWith(string $string, string $start): bool
+    public static function endsWith(string $string, string $end): bool
     {
-        return self::end($string, strlen($start)) === $start;
+        return self::end($string, strlen($end)) === $end;
     }
 }
