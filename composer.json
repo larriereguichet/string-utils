@@ -3,11 +3,11 @@
     "description": "PHP class to help string manipulation",
     "type": "library",
     "require": {
-        "php": "^7.2"
+        "php": "^7.1"
     },
     "require-dev": {
-        "phpunit/phpunit": "^8.2",
-        "friendsofphp/php-cs-fixer": "^2.15"
+        "phpunit/phpunit": "^7.0 || ^8.2",
+        "friendsofphp/php-cs-fixer": "^2.0"
     },
     "license": "MIT",
     "authors": [
