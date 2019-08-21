@@ -46,5 +46,6 @@ class StringUtilsTest extends TestCase
     {
         $this->assertEquals('salsifi-potatoes', StringUtils::underscore('Salsifi-Potatoes'));
         $this->assertEquals('salsifi_potatoes', StringUtils::underscore('SalsifiPotatoes'));
+        $this->assertEquals('cms.article.publication_status', StringUtils::underscore('cms.article.publicationStatus'));
     }
 }
