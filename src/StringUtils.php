@@ -26,21 +26,25 @@ class StringUtils
     /**
      * A string to underscore.
      *
-     * @param string $id The string to underscore
+     * @param string $value The string to underscore
      *
      * @return string The underscored string
      */
-    public static function underscore(string $id): string
+    public static function underscore(string $value): string
     {
-        return strtolower(preg_replace([
+        $value = strtolower(preg_replace([
                 '/([A-Z]+)([A-Z][a-z])/',
                 '/([a-z\d])([A-Z])/',
             ], [
                 '\\1_\\2',
                 '\\1_\\2',
             ],
-                str_replace('_', '.', $id))
+                str_replace('_', '.', $value))
         );
+
+        $value = preg_replace('/\B([A-Z])/', '_$1', $value);
+
+        return $value;
     }
 
     /**
